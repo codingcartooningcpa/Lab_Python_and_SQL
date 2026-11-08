@@ -1,0 +1,27 @@
+// CTS 2433 - Python + MySQL lab environment for GitHub Codespaces.
+// Opening this repository in a codespace starts two containers:
+//   app : Python 3.12 + VS Code (where students work)
+//   db  : a MySQL 8.4 server, preloaded with the Registration database
+{
+  "name": "CTS 2433 - Python + MySQL",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  // Installs Connector/Python once, when the codespace is first created.
+  "postCreateCommand": "pip install --user -r requirements.txt",
+
+  // Connection settings the Python scripts read (see config.py).
+  "remoteEnv": {
+    "DB_HOST": "127.0.0.1",
+    "DB_USER": "student",
+    "DB_PASSWORD": "secret",
+    "DB_NAME": "Registration"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
