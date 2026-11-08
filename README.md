@@ -1,4 +1,4 @@
-# CTS 2433 – Python + MySQL Lab (Chapter 9)
+# Python + MySQL Lab (Chapter 9)
 
 This project runs entirely in your browser. You get VS Code, Python, and a
 real MySQL server, with nothing to install on your computer.
@@ -8,7 +8,7 @@ real MySQL server, with nothing to install on your computer.
 1. Sign in to GitHub.
 2. On this page, click the green **Code** button, open the **Codespaces** tab,
    and click **Create codespace on main**.
-3. Wait 2–4 minutes the first time. VS Code opens in your browser.
+3. Wait 2-4 minutes the first time. VS Code opens in your browser.
 4. Open a terminal: **Terminal → New Terminal** (or press <kbd>Ctrl</kbd>+<kbd>`</kbd>).
 
 ## Run the lab, one step at a time
