@@ -8,15 +8,7 @@ import time
 import mysql.connector
 from config import DB_CONFIG
 
-for attempt in range(1, 31):
-    try:
-        conn = mysql.connector.connect(**DB_CONFIG)
-        break
-    except mysql.connector.Error:
-        print(f"MySQL is still starting... (try {attempt} of 30)")
-        time.sleep(2)
-else:
-    raise SystemExit("Could not connect. Wait a minute and run this again.")
+conn = mysql.connector.connect(**DB_CONFIG)
 
 cur = conn.cursor()
 cur.execute("SELECT VERSION()")
