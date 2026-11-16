@@ -1,4 +1,4 @@
-# Python + MySQL Lab (Chapter 9)
+# Python + MySQL Lab
 
 This project runs entirely in your browser. You get VS Code, Python, and a
 real MySQL server, with nothing to install on your computer.
