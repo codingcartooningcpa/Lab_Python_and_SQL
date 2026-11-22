@@ -4,7 +4,6 @@ The first time a codespace starts, MySQL needs up to a minute to get
 ready. This script keeps trying for about a minute before giving up.
 Run it:   python step0_check_connection.py
 """
-import time
 import mysql.connector
 from config import DB_CONFIG
 
