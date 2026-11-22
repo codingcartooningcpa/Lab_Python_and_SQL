@@ -1,7 +1,6 @@
 """Step 5: Create and call a stored procedure from Python.
 
-Note: no DELIMITER is needed here. DELIMITER is only for the MySQL
-command-line client; Python sends the whole CREATE PROCEDURE as one
+Python sends the whole CREATE PROCEDURE as one
 statement.
 Run it:   python step5_stored_procedure.py
 """
